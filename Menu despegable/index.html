@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> Menu Despegable | CodingPost</title>
+
+  <!-- link css -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- link icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">CodingPost</a></div>
+        <ul class="links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li>
+            <a href="#" class="desktop-link">Servicios</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Servicios</label>
+            <ul>
+              <li><a href="#">Servicio HTML </a></li>
+              <li><a href="#">Servicio CSS </a></li>
+              <li><a href="#">Servicio PHP </a></li>
+              <li><a href="#">Servicio JAVA </a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Equipos</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Equipos</label>
+            <ul>
+              <li><a href="#">Equipo de ventas</a></li>
+              <li><a href="#">Equipo de marketing </a></li>
+              <li><a href="#">Equipo de desarrollo web </a></li>
+              <li>
+                <a href="#" class="desktop-link">Otros equipos</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">Otros equipos</label>
+                <ul>
+                  <li><a href="#">Equipo de aplicaciones</a></li>
+                  <li><a href="#">Servicio al cliente</a></li>
+                  <li><a href="#">Equipo de google</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Contactanos</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Buscador interno..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+</body>
+</html>
